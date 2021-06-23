@@ -13,5 +13,5 @@ jobs:
       run: |
         git clone -b dealii-9.3 https://github.com/dealii/candi.git
         cd candi
-        ./candi.sh  -j 2 --packages="once:p4est once:trilinos once:petsc dealii"
+        ./candi.sh  -j 2 --packages="once:p4est once:trilinos once:petsc dealii" --platform=deal.II-toolchain/platforms/supported/catalina.platform
 
