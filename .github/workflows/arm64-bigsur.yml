@@ -1,0 +1,16 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  bigsur:
+    name: arm64-candi test
+    runs-on: [self-hosted]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: setup
+      run: |
+        git clone -b https://github.com/dealii/candi.git
+        ./candi.sh 
+
