@@ -17,10 +17,10 @@ jobs:
         export OMPI_CXX=g++-11
         export OMPI_CC=gcc-11
         export OMPI_FC=gfortran-11
-        export MPI_BIN /opt/homebrew/Cellar/open-mpi/4.1.1_2/bin
-        export MPI_INCLUDE /opt/homebrew/Cellar/open-mpi/4.1.1_2/include
-        export MPI_LIB /opt/homebrew/Cellar/open-mpi/4.1.1_2/lib
-        export MPI_HOME /opt/homebrew/Cellar/open-mpi/4.1.1_2
+        export MPI_BIN=/opt/homebrew/Cellar/open-mpi/4.1.1_2/bin
+        export MPI_INCLUDE=/opt/homebrew/Cellar/open-mpi/4.1.1_2/include
+        export MPI_LIB=/opt/homebrew/Cellar/open-mpi/4.1.1_2/lib
+        export MPI_HOME=/opt/homebrew/Cellar/open-mpi/4.1.1_2
         echo 'DEAL_II_CONFOPTS="-D CMAKE_BUILD_TYPE=Debug"' >> candi.cfg
         git clone -b dealii-9.3 https://github.com/dealii/candi.git
         cd candi
