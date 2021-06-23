@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: setup
       run: |
-        git clone -b https://github.com/dealii/candi.git
-        ./candi.sh 
+        git clone -b deal.ii-9.3 https://github.com/dealii/candi.git
+        ./candi.sh --platform=deal.II-toolchain/platforms/supported/catalina.platform/catalina.platform
 
