@@ -11,6 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: setup
       run: |
+        #brew install wget gnuplot cmake openmpi modules vim trash
         git clone -b dealii-9.3 https://github.com/dealii/candi.git
         cd candi
         ./candi.sh  -j 2 --packages="once:p4est once:trilinos once:petsc dealii" --platform=deal.II-toolchain/platforms/supported/catalina.platform
